@@ -1,6 +1,6 @@
-# bundle
+# Cryostasis
 
-TODO: Write a description here
+Cryostasis allows you to preserve files into the crystal binary. Upon launch of the app, the files will be restored to their location relative to the executable. This allows you to access the files in a standard crystal way and does not keep the files in memory for longer than they need to be.
 
 ## Installation
 
@@ -8,8 +8,8 @@ TODO: Write a description here
 
    ```yaml
    dependencies:
-     bundle:
-       github: your-github-user/bundle
+     cryostasis:
+       github: jwaldrip/cryostasis
    ```
 
 2. Run `shards install`
@@ -17,18 +17,14 @@ TODO: Write a description here
 ## Usage
 
 ```crystal
-require "bundle"
+require "cryostasis"
+
+Cryostasis.preserve("glob/pattern/of/files/**")
 ```
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
 
 ## Contributing
 
-1. Fork it (<https://github.com/your-github-user/bundle/fork>)
+1. Fork it (<https://github.com/jwaldrip/cyrostasis/fork>)
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
 4. Push to the branch (`git push origin my-new-feature`)
@@ -36,4 +32,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [jwaldrip](https://github.com/your-github-user) - creator and maintainer
+- [jwaldrip](https://github.com/jwaldrip/cyrostasis) - creator and maintainer
